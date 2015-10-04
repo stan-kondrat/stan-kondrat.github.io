@@ -3,7 +3,7 @@ title: Stan Kondrat
 email: stan.kondrat аt gmail dоt com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stan-kondrat.github.io/" # the base hostname & protocol for your site
-twitter_username: StanKondrat
+github_username:  stan-kondrat
 
 # Build settings
 markdown: kramdown
