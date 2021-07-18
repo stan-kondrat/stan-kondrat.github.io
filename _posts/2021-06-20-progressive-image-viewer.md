@@ -4,7 +4,7 @@ categories: Projects
 tags: React TypeScript WebAssembly Rust
 ---
 
-Progressive Image Viewer allows  to simulate slow communication and see how the browser will render partially loaded [interlaced images](https://en.wikipedia.org/wiki/Interlacing_(bitmaps)).
+Progressive Image Viewer allows  to simulate slow communication and see how the browser will render partially loaded incrementally decoded(progressive or [interlacing](https://en.wikipedia.org/wiki/Interlacing_(bitmaps))) images.
 
 [https://stan-kondrat.github.io/progressive-image-viewer/](https://stan-kondrat.github.io/progressive-image-viewer/)
 
