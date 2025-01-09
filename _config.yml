@@ -23,6 +23,7 @@ timezone: "UTC" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - googlef5795c70f6aede6a.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
