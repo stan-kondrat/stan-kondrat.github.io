@@ -15,4 +15,4 @@ If this trend continues, Google Search might eventually end up on [Killed by Goo
 
 ### Updates
 - There's the [idea](https://news.ycombinator.com/reply?id=43061256) that chat services will use Google Search as a backend, but in fact, many AI services and crawlers scan sites more intensively than Google Search already. I've seen this myself in Google Analytics.
-
+- Google Search seems like a finished product that has been making money for years without much investment in research. AI chat systems, however, are currently spending heavily on research and development, and it's unclear what the final product will look like or how AI will generate revenue in the end.
