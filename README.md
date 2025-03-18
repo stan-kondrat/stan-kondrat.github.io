@@ -2,6 +2,10 @@
 
 https://stan-kondrat.github.io
 
-```sh
-bundle exec jekyll serve
-```
+
+## Build with 
+
+- Astro
+- Tailwind
+- https://github.com/tandpfun/skill-icons
+

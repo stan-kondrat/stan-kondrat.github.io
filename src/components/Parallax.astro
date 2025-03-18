@@ -1,0 +1,77 @@
+---
+import type { HTMLAttributes } from "astro/types";
+---
+
+<style>
+    body {
+    }
+    .parallax-container {
+        background-color: white;
+        background-image: url("/assets/cloud-img/cover.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 720px;
+
+        height: 88vh;
+        max-height: 720px;
+        max-width: 720px;
+        margin: 0px auto;
+
+        position: relative;
+        overflow: hidden;
+
+        box-sizing: content-box;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px 10px #b7d6e3;
+    }
+    .parallax-sprite {
+        background-image: url("/assets/cloud-img/sprite.jpg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 360;
+        height: 100%;
+        max-height: 720px;
+        max-width: 720px;
+    }
+</style>
+<div id="parallax-container" class="parallax-container">
+    <div id="parallax-sprite" class="parallax-sprite"></div>
+</div>
+
+<script>
+    const parallaxContainer = document.getElementById("parallax-container")!;
+    const parallaxSprite = document.getElementById("parallax-sprite")!;
+
+    const frames = 77; // 55440/720
+
+    const calcParallax = () => {
+        const { height: cHeight, top: cTop } =
+            parallaxContainer.getBoundingClientRect();
+
+        const viewportHeight = window.innerHeight;
+
+        const startScroll = viewportHeight; // cTop == viewportHeight
+        const endScroll = -cHeight; // cTop == -cHeight
+
+        if (cTop > startScroll || cTop < endScroll) {
+            return;
+        }
+        const scrollLength = startScroll - endScroll;
+        const pxPerFrames = scrollLength / frames;
+        const frame = ((startScroll - cTop) / pxPerFrames) | 0;
+
+        let posOffsetStart = 0.4 * cHeight;
+        let posOffset = 0;
+        if (cTop < -posOffsetStart) {
+            posOffset = posOffsetStart + cTop;
+        }
+
+        const pos = frame * 720 + posOffset;
+        parallaxSprite.style.backgroundPositionY = `-${pos}px`;
+
+        console.log(`h ${cHeight}, top ${cTop}, frame ${frame}, -${pos}px`);
+    };
+    calcParallax();
+
+    window.addEventListener("scroll", calcParallax);
+</script>
