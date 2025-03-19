@@ -73,5 +73,7 @@ import type { HTMLAttributes } from "astro/types";
     };
     calcParallax();
 
-    window.addEventListener("scroll", calcParallax);
+    window.addEventListener("scroll", () =>
+        requestAnimationFrame(calcParallax),
+    );
 </script>

@@ -20,7 +20,12 @@ const posts = allPostsItems.slice(0, 6);
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style></style>
+		<link
+			rel="preload"
+			href="/assets/cloud-img/sprite.jpg"
+			as="image"
+			type="image/jpeg"
+		/>
 	</head>
 	<body>
 		<Header />
@@ -66,7 +71,7 @@ const posts = allPostsItems.slice(0, 6);
 			</div>
 		</section>
 
-		<section class="m-30 relative bg-white px-4">
+		<section class="my-30 relative bg-white px-4">
 			<div class="container mx-auto">
 				<div class="mx-auto w-full px-4 text-center lg:w-6/12">
 					<p
@@ -174,7 +179,7 @@ const posts = allPostsItems.slice(0, 6);
 			</div>
 		</section>
 
-		<section class="m-10 container mx-auto">
+		<section class="my-10 px-5 container mx-auto">
 			<div class="mx-auto w-full px-4 mb-6 text-center lg:w-6/12">
 				<p
 					class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold"
@@ -214,7 +219,7 @@ const posts = allPostsItems.slice(0, 6);
 				}
 			</div>
 		</section>
-		<section class="m-10 container mx-auto">
+		<section class="my-10 px-5 container mx-auto">
 			<Parallax />
 		</section>
 		<Footer />

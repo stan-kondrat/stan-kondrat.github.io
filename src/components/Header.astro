@@ -5,7 +5,7 @@ import { SITE_TITLE } from "../consts";
 
 <header class="container mx-auto mb-4">
 	<nav>
-		<h2><a href="/">Stan Kondrat</a></h2>
+		<h2><a href="/" class="text-nowrap font-bold">Stan Kondrat</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/posts">Posts</HeaderLink>
@@ -13,23 +13,29 @@ import { SITE_TITLE } from "../consts";
 			<HeaderLink href="/tags">Tags</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<div></div>
 	</nav>
 </header>
 <style>
+	@reference "tailwindcss";
+
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
+	.internal-links {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 	nav a {
-		padding: 1em 0.5em;
+		@apply text-sm px-1 py-1 sm:text-lg sm:px-2 sm:py-2;
+
 		color: var(--black);
-		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+
+		@apply border-b-2 sm:border-b-3;
 	}
 </style>
