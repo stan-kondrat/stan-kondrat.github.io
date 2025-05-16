@@ -8,31 +8,29 @@ import { getPostDate } from "../utils/getPostDate";
 import type { IPostItem } from "../utils/IPostItem";
 
 const allPostsItems = (await getCollection("posts")).sort((a, b) => {
-    return +getPostDate(b) - +getPostDate(a);
+  return +getPostDate(b) - +getPostDate(a);
 });
 const postGroups = allPostsItems.reduce<
-    Array<{ name: string; items: IPostItem[] }>
+  Array<{ name: string; items: IPostItem[] }>
 >((prev, curr) => {
-    const tags = curr.data.tags.split(" ");
-    for (const name of tags) {
-        let index = prev.findIndex((item) => item.name === name);
-        (prev[index] ?? prev[prev.push({ name, items: [] }) - 1]).items.push(
-            curr,
-        );
-    }
-    return prev;
+  const tags = curr.data.tags.split(" ");
+  for (const name of tags) {
+    let index = prev.findIndex((item) => item.name === name);
+    (prev[index] ?? prev[prev.push({ name, items: [] }) - 1]).items.push(curr);
+  }
+  return prev;
 }, []);
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={"Posts by Tag - Stan Kondrat"} description={""} />
-        <style></style>
-    </head>
-    <body>
-        <Header />
-        <PostGroups postGroups={postGroups} />
-        <Footer />
-    </body>
+  <head>
+    <BaseHead title={"Posts by Tag - Stan Kondrat"} description={""} />
+    <style></style>
+  </head>
+  <body>
+    <Header />
+    <PostGroups postGroups={postGroups} />
+    <Footer />
+  </body>
 </html>

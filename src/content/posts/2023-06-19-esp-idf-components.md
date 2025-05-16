@@ -4,11 +4,12 @@ categories: Projects
 tags: esp32 firmware
 excerpt: Packaging libs For EspressIf IDF Components.
 ---
+
 Packaging libs For EspressIf IDF Components.
 
 While working with EspressIf IDF, I encountered a situation where I couldn't find the semver component I needed. To overcome this hurdle, I took the existing [semver.c](https://github.com/h2non/semver.c) and wrapped it specifically for EspressIf IDF components.
 
-The solution was quite straightforward: I added the source project as a git submodule and included a manifest file called `idf_component.yml`. However, when I attempted to publish the component `compote component upload`, I encountered an error message stating: 
+The solution was quite straightforward: I added the source project as a git submodule and included a manifest file called `idf_component.yml`. However, when I attempted to publish the component `compote component upload`, I encountered an error message stating:
 
 > ERROR: Failed to get API Token from the config file
 
@@ -33,7 +34,6 @@ After thar reconfigure project:
 ```yml
 idf.py reconfigure
 ```
-
 
 ## What's next
 

@@ -4,38 +4,38 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header class="container mx-auto mb-4">
-	<nav>
-		<h2><a href="/" class="text-nowrap font-bold">Stan Kondrat</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/posts">Posts</HeaderLink>
-			<HeaderLink href="/categories">Categories</HeaderLink>
-			<HeaderLink href="/tags">Tags</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-	</nav>
+  <nav>
+    <h2><a href="/" class="text-nowrap font-bold">Stan Kondrat</a></h2>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/posts">Posts</HeaderLink>
+      <HeaderLink href="/categories">Categories</HeaderLink>
+      <HeaderLink href="/tags">Tags</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+  </nav>
 </header>
 <style>
-	@reference "tailwindcss";
+  @reference "tailwindcss";
 
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.internal-links {
-		display: flex;
-		flex-wrap: nowrap;
-	}
-	nav a {
-		@apply text-sm px-1 py-1 sm:text-lg sm:px-2 sm:py-2;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .internal-links {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  nav a {
+    @apply text-sm px-1 py-1 sm:text-lg sm:px-2 sm:py-2;
 
-		color: var(--black);
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
+    color: var(--black);
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
 
-		@apply border-b-2 sm:border-b-3;
-	}
+    @apply border-b-2 sm:border-b-3;
+  }
 </style>
