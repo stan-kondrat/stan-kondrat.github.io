@@ -1,0 +1,88 @@
+---
+//
+---
+
+<div class="inline-flex gap-4">
+  <a
+    href="#services"
+    class="animeBtn cursor-pointer relative inline-flex flex-nowrap items-center gap-2 px-6 py-3 bg-cyan-600 text-white rounded-xl hover:bg-cyan-700 transition-all"
+  >
+    See My Services
+    <svg
+      class="w-5 h-5 animate-bounce"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"
+      ></path>
+    </svg>
+  </a>
+
+  <a
+    href="/beauty-salon-app-development"
+    class="animeBtn cursor-pointer relative inline-flex flex-nowrap items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all"
+  >
+    <span class="flex flex-col mr-4">
+      <span>Complete Branded Mobile App</span>
+      <span class="font-bold text-lg">for Beauty Salons</span>
+    </span>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+      ></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg
+    >
+
+    <span
+      class="absolute -top-2 -right-2 bg-yellow-400 text-xs font-bold text-black px-2 py-0.5 rounded-full shadow-md"
+    >
+      NEW
+    </span>
+  </a>
+</div>
+
+<script>
+  import { animate } from "animejs";
+
+  const buttons = document.querySelectorAll(".animeBtn");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      animate(btn, {
+        scale: [
+          { value: 1.2, duration: 150 },
+          { value: 1, duration: 300 },
+        ],
+        easing: "easeInOutQuad",
+      });
+    });
+
+    btn.addEventListener("mouseenter", () => {
+      animate(btn, {
+        scale: 1.05,
+        duration: 200,
+        easing: "easeOutQuad",
+      });
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      animate(btn, {
+        scale: 1,
+        duration: 200,
+        easing: "easeOutQuad",
+      });
+    });
+  });
+</script>
