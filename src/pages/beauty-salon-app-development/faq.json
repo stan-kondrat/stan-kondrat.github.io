@@ -1,0 +1,94 @@
+{
+  "Process": [
+    {
+      "question": "Is two weeks enough time for app publication?",
+      "answer": "Two weeks is the average time needed to add your branding, set up developer accounts, and pass App Store moderation. However, delays may occur due to factors outside our control."
+    },
+    {
+      "question": "What happens after I send you my request?",
+      "answer": "You’ll receive payment instructions, followed by a request to provide your company details."
+    },
+    {
+      "question": "What company details should I provide?",
+      "answer": "You’ll receive forms to complete with your company information, images, logo, branding colors, etc. You'll also get instructions for creating Apple and Google developer accounts and sharing access."
+    },
+    {
+      "question": "How will the app be published?",
+      "answer": "Per App Store rules, the app must be published under the name of the company that owns it. It will be published under your developer account, and you may remove my access afterward."
+    },
+    {
+      "question": "Can I see a test version before the app is published?",
+      "answer": "Yes, the app will first be shared via Apple TestFlight and Google Test. You can review it and request minor changes before submission for final review."
+    },
+    {
+      "question": "What if the app doesn’t pass the moderator review?",
+      "answer": "Most apps pass on the first attempt, but occasionally changes are required. I will make any necessary updates and resubmit the app until it is approved."
+    },
+    {
+      "question": "Is support available?",
+      "answer": "Yes, I’m available via chat and will assist you at every step of the process."
+    }
+  ],
+  "Payments": [
+    {
+      "question": "How can I pay?",
+      "answer": "Payments can be made via IBAN bank transfer or by card through Viva Pay. The payment must be made by the company or individual who will publish the app."
+    },
+    {
+      "question": "Do I need to pay Apple and Google directly?",
+      "answer": "Yes. Apple charges $99/year, and Google charges a one-time $25 fee for a developer account."
+    },
+    {
+      "question": "What is the <platform> platform fee for?",
+      "answer": "This fee covers access to the backend platform where you can manage your services, appointments, and other business features. It includes maintenance and technical support."
+    },
+    {
+      "question": "Is there a money-back guarantee?",
+      "answer": "Yes. If you're not satisfied after receiving the test version, you’ll get a 100% refund - no questions asked. However, once the app is published, the work is considered complete and no refunds will be issued."
+    }
+  ],
+  "Technology": [
+    {
+      "question": "Will my app be available on both iOS and Android?",
+      "answer": "Yes, it will be available on both platforms."
+    },
+    {
+      "question": "Will it be hybrid or native?",
+      "answer": "The app will be developed natively - for best performance - using Swift for iOS and Kotlin for Android."
+    },
+    {
+      "question": "Can I request changes after the app is built?",
+      "answer": "Yes, changes can be made at an additional hourly rate."
+    },
+    {
+      "question": "Can I update app details like services, prices, or company info?",
+      "answer": "Yes, these can be updated anytime via the backend platform without limits."
+    }
+  ],
+  "Legal": [
+    {
+      "question": "Do you provide support and maintenance after launch?",
+      "answer": "Yes. Ongoing backend support is included in the <platform> fee."
+    },
+    {
+      "question": "Can I sell the app?",
+      "answer": "Yes. You can transfer the app and developer accounts to a new owner. Company details can also be updated in the backend."
+    },
+    {
+      "question": "Can I resell the app to others?",
+      "answer": "No. You are purchasing a single-use license for your business."
+    },
+    {
+      "question": "Can I change the branding later?",
+      "answer": "Yes. Branding changes require re-publishing the app and are billed at the standard hourly rate."
+    },
+    {
+      "question": "Is the source code included?",
+      "answer": "No. You’re purchasing a perpetual license to use the app and publishing services, not the source code."
+    },
+    {
+      "question": "Can I buy the source code?",
+      "answer": "Yes, the source code is available for purchase with or without resale rights. This requires legal documentation, and the cost is comparable to developing a new app from scratch."
+    }
+  ]
+}

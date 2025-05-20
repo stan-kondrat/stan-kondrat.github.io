@@ -2,6 +2,13 @@
 import BaseHead from "../../components/BaseHead.astro";
 import { PRICING } from "../../utils/pricing";
 
+import ChevronUpSvg from "../../components/icons/chevron-up.svg";
+import ChevronDownSvg from "../../components/icons/chevron-down.svg";
+import MailShareSvg from "../../components/icons/mail-share.svg";
+import CircleCheckSvg from "../../components/icons/circle-check.svg";
+
+import faq from "./faq.json";
+
 const title =
   "Beauty Salon App Development - Full Solution in 2 Weeks | Freelance Mobile Dev";
 
@@ -15,7 +22,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
   </head>
 
   <body class="bg-gray-100 font-sans antialiased">
-    <div class="bg-white py-8">
+    <header class="bg-white py-8">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1
           class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl tracking-tight leading-tight"
@@ -39,15 +46,15 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           </a>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="py-12 bg-gray-100">
+    <section class="py-12 bg-gray-100">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight">
           Solving Real Problems for Beauty Salon Owners
         </h2>
         <p class="mt-4 text-lg text-gray-700">
-          Managing a salon isn’t just about delivering great service — it’s also
+          Managing a salon isn’t just about delivering great service - it’s also
           about staying organized, standing out from the competition, and
           keeping clients coming back. Without the right tools, even the best
           salons can lose valuable time and business.
@@ -58,10 +65,22 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
               ❌ Common Challenges:
             </h3>
             <ul class="list-disc list-inside text-gray-700">
-              <li>Clients forget their appointments, and staff don’t always call to remind them</li>
-              <li>Taking appointments by phone or message is time-consuming and prone to errors</li>
+              <li>
+                Burnout from managing paper records and and manual scheduling
+              </li>
+              <li>
+                Clients forget their appointments, and staff don’t always call
+                to remind them
+              </li>
+              <li>
+                Taking appointments by phone or message is time-consuming and
+                prone to errors
+              </li>
               <li>No simple way to showcase services or staff</li>
-              <li>Losing Loyal Clients – No easy way to track visits or reward repeat customers</li>
+              <li>
+                Losing Loyal Clients – No easy way to track visits or reward
+                repeat customers
+              </li>
               <li>Struggling to create a modern, professional brand image</li>
             </ul>
           </div>
@@ -83,9 +102,9 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-white">
+    <section class="py-12 bg-white">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight">
           What Life Looks Like After Your App Launches
@@ -108,7 +127,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
             your real business
           </li>
           <li>
-            You feel confident and in control — your business works for you, not
+            You feel confident and in control - your business works for you, not
             the other way around
           </li>
           <li>
@@ -117,9 +136,9 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-gray-100">
+    <section class="py-12 bg-gray-100">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight">
           Because You Deserve More Than Just Work
@@ -135,7 +154,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           that there’s never enough time for yourself or your loved ones.
         </p>
         <p class="mt-4 text-lg text-gray-700">
-          Imagine a world where your business supports you — not drains you.
+          Imagine a world where your business supports you - not drains you.
           Where your app takes care of bookings and clients, so you can focus on
           your passion, your creativity, and most importantly, your life outside
           work.
@@ -146,20 +165,20 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           expense.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-white">
+    <section class="py-12 bg-white">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight">
           A Brighter Future for Your Salon
         </h2>
         <p class="mt-4 text-lg text-gray-700">
-          There’s a better way to run your salon — one where technology works
+          There’s a better way to run your salon - one where technology works
           for you, not against you.
         </p>
         <p class="mt-4 text-lg text-gray-700">
           Imagine waking up knowing your schedule is organized, your clients are
-          happy, and your business is steadily growing — all without extra
+          happy, and your business is steadily growing - all without extra
           stress or chaos.
         </p>
         <p class="mt-4 text-lg text-gray-700">
@@ -175,9 +194,9 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           step toward a smarter, smoother way to work.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-gray-100">
+    <section class="py-12 bg-gray-100">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
           Join the Community Now Owning Their Own Branded App
@@ -191,15 +210,15 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
               clients. It feels amazing to finally own my own branded app that
               truly understands our industry.”
             </p>
-            <p class="font-semibold text-gray-900">— Sophie M., Paris</p>
+            <p class="font-semibold text-gray-900">- Sophie M., Paris</p>
           </div>
           <div class="fadein2 bg-white rounded-lg shadow-md p-6">
             <p class="text-gray-700 italic mb-4">
               “Thanks to Stan’s professional and quick work, my salon runs
-              smoothly every day. Hey, now I’m owning my own branded app — it’s
+              smoothly every day. Hey, now I’m owning my own branded app - it’s
               like having a reliable partner behind the scenes.”
             </p>
-            <p class="font-semibold text-gray-900">— Luca R., Milan</p>
+            <p class="font-semibold text-gray-900">- Luca R., Milan</p>
           </div>
           <div class="fadein3 bg-white rounded-lg shadow-md p-6">
             <p class="text-gray-700 italic mb-4">
@@ -207,7 +226,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
               sacrificing quality. Hey, now I own my own branded app and I’m
               proud of it!”
             </p>
-            <p class="font-semibold text-gray-900">— Elena K., Warsaw</p>
+            <p class="font-semibold text-gray-900">- Elena K., Warsaw</p>
           </div>
           {/* Add screenshots or video reviews here */}
         </div>
@@ -222,12 +241,12 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           yours.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-white">
+    <section class="py-12 bg-white">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
-          📋 How to Get Started — 7 Easy Steps
+          📋 How to Get Started - 7 Easy Steps
         </h2>
         <ol
           class="mt-4 space-y-4 text-lg text-gray-700 list-decimal list-inside"
@@ -267,7 +286,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
         <p class="mt-8 text-lg text-gray-700">
           If you have any doubts or questions at any point, don’t hesitate to
           get in touch. Unlike many other developers who leave you on your own
-          after delivery, I’m committed to guiding you through every step—from
+          after delivery, I’m committed to guiding you through every step - from
           understanding the agreements to launching and beyond. Your success is
           my priority, and I’m always available to clarify, assist, and ensure
           you feel confident with your new branded salon app.
@@ -279,13 +298,13 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
         </p>
         <p class="mt-4 text-lg text-gray-700">
           You won’t find this level of personal support and clear communication
-          anywhere else — because with me, you’re not just another client;
+          anywhere else - because with me, you’re not just another client;
           you’re a partner.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-gray-100">
+    <section class="py-12 bg-gray-100">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
           Why Choose Me Over Agencies and Other Developers?
@@ -332,7 +351,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
               </li>
               <li>
                 <strong>Transparent Communication:</strong> No hidden fees or surprises
-                — I keep you informed every step of the way.
+                - I keep you informed every step of the way.
               </li>
               <li>
                 <strong>Personal Support:</strong> I’m here to guide you through
@@ -345,16 +364,16 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="py-12 bg-white">
+    <section class="py-12 bg-white">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
           Pricing & What’s Included
         </h2>
         <div class="bg-gray-100 rounded-lg p-6 mb-4">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">
-            One-Time Development Fee — {PRICING.beautySalonApp}
+            One-Time Development Fee - {PRICING.beautySalonApp}
           </h3>
           <p class="text-gray-700">
             This covers everything you need to get your branded beauty salon
@@ -375,7 +394,7 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
         </div>
         <div class="bg-gray-100 rounded-lg p-6 mb-4">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">
-            SaaS Backend Platform — {PRICING.platform}
+            SaaS Backend Platform - {PRICING.platform}
           </h3>
           <p class="text-gray-700">
             Your app runs on a reliable SaaS backend platform, which includes
@@ -406,77 +425,179 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
           </ul>
         </div>
       </div>
+    </section>
 
-      <div class="py-12 bg-gray-100">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
-            Feature List: What Your Branded Salon App Will Do
-          </h2>
-          <ul
-            class="mt-4 space-y-4 text-lg text-gray-700 list-disc list-inside"
-          >
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-6">
+          Feature List: What Your Branded Salon App Will Do
+        </h2>
+        <ul class="mt-4 space-y-4 text-lg text-gray-700 list-disc list-inside">
+          <li>
+            Clients can download the app and easily sign in with Apple or Google
+            ID - no hassle, no extra passwords.
+          </li>
+          <li>
+            View a full list of services and get all important information about
+            your salon - including images, business hours, map, and contact
+            details.
+          </li>
+          <li>
+            Clients can book appointments directly in the app, optionally
+            choosing staff members, specific services, preferred times, and
+            entering their own name and phone number.
+          </li>
+          <li>
+            On the platform side, you can manage your calendar with
+            appointments, organized by staff members and service areas, making
+            day-to-day scheduling simple and efficient.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-30 px-2 bg-white">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="mb-8 text-4xl text-stone-800 sm:text-center">
+          Branded Own Beauty Salon Mobile App for:
+        </h2>
+        <div class="flex justify-center">
+          <ul class="mt-4 space-y-4 text-2xl text-stone-700">
             <li>
-              Clients can download the app and easily sign in with Apple or
-              Google ID — no hassle, no extra passwords.
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Cutting Down Salon Chaos and Stress
             </li>
             <li>
-              View a full list of services and get all important information
-              about your salon — including images, business hours, map, and
-              contact details.
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Helping You Focus on What Matters Most
             </li>
             <li>
-              Clients can book appointments directly in the app, optionally
-              choosing staff members, specific services, preferred times, and
-              entering their own name and phone number.
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Making Salon Management Stress-Free
             </li>
             <li>
-              On the platform side, you can manage your calendar with
-              appointments, organized by staff members and service areas, making
-              day-to-day scheduling simple and efficient.
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Taking Control of Your Bookings and Staff
+            </li>
+            <li>
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Simplifying Your Salon Operations
+            </li>
+            <li>
+              <CircleCheckSvg
+                class="inline-block align-bottom text-green-700 h-8 w-8"
+              /> Helping You Focus on What Matters Most
             </li>
           </ul>
         </div>
       </div>
+    </section>
 
-      <div class="py-12 bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Limited Spots Available for Custom Salon Apps
-          </h2>
-          <p class="mt-2 text-lg text-gray-700">
-            To deliver top-quality, personalized apps, I only accept 2-3 salon
-            app projects per month — ensuring your app gets the full focus it
-            deserves.
-          </p>
-          <p class="mt-4 text-lg text-gray-700">
-            If you’re ready to stand out with your own branded salon app built
-            fast and professionally, don’t miss your chance.
-          </p>
+    <section
+      class="py-8 px-2 min-h-[80vh] bg-linear-to-br from-cyan-50 via-indigo-100 to-blue-200"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h2 class="my-4 text-4xl text-stone-800 sm:text-center">
+          Frequently Asked Questions (FAQ)
+        </h2>
+        <div class="flex flex-col gap-4">
+          {
+            Object.entries(faq).map(([groupName, items]) => (
+              <div>
+                <h3 class="my-4 text-2xl">{groupName}</h3>
+                <div class="accordion flex flex-col gap-3">
+                  {items.map(({ question, answer }, index) => (
+                    <div class="border border-blue-200 rounded-md bg-blue-50 shadow-sm shadow-blue-200">
+                      <input
+                        type="checkbox"
+                        id={`faq-${groupName}-${index}`}
+                        class="hidden"
+                      />
+                      <label
+                        for={`faq-${groupName}-${index}`}
+                        class="flex justify-between px-4 py-2 text-lg cursor-pointer"
+                      >
+                        <span>
+                          {question.replace("<platform>", PRICING.platform)}
+                        </span>
+                        <ChevronUpSvg class={"chevron-up"} />
+                        <ChevronDownSvg class={"chevron-down"} />
+                      </label>
+                      <div class="accordion-content inset-shadow-sm inset-shadow-gray-200">
+                        <div class="p-4">
+                          {answer.replace("<platform>", PRICING.platform)}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+        <div class="py-8 text-md text-stone-500 sm:text-center">
+          If you have any questions, fell free to <a
+            class="underline text-blue-800"
+            href="mailto:stan.kondrat.works@gmail.com?subject=Questions"
+            >message me</a
+          >. <br /> Frequently asked questions will be added to the FAQ. Thank you!
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-2 bg-white">
+      <div class="max-w-xl mx-auto">
+        <h2 class="mb-8 text-4xl text-stone-800 sm:text-center">
+          Limited Spots Available
+        </h2>
+
+        <p class="mb-4 text-lg text-gray-700">
+          To deliver top-quality, personalized apps, I only accept 2-3 salon app
+          projects per month - ensuring your app gets the full focus it
+          deserves.
+        </p>
+
+        <p class="mb-4 text-lg text-gray-700">
+          If you’re ready to stand out with your own branded salon app built
+          fast and professionally, don’t miss your chance.
+        </p>
+
+        <div class="flex justify-center">
           <a
             href="mailto:stan.kondrat.works@gmail.com?subject=Request%20for%20Mobile%20App%20Development"
-            class="mt-6 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full text-lg inline-block"
+            class="mt-4 py-4 px-4 sm:px-8 text-sm sm:text-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl flex items-center gap-4"
           >
-            Message me now to check current availability and secure your spot.
+            <span>
+              Message me now to check current <br /> availability and secure your
+              spot
+            </span>
+            <MailShareSvg class="sm:w-10 sm:h-10" />
           </a>
         </div>
       </div>
+    </section>
 
-      <div class="py-8 bg-gray-100">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Branded Own Beauty Salon Mobile App for:
-          </h2>
-          <ul class="mt-4 space-y-2 text-lg text-gray-700">
-            <li>Cutting Down Salon Chaos and Stress</li>
-            <li>Helping You Focus on What Matters Most</li>
-            <li>Making Salon Management Stress-Free</li>
-            <li>Taking Control of Your Bookings and Staff</li>
-            <li>Simplifying Your Salon Operations</li>
-            <li>Helping You Focus on What Matters Most</li>
-          </ul>
+    <footer class="px-2 py-8 bg-gray-100 border-t-1 border-gray-300">
+      <div
+        class="container mx-auto flex flex-wrap gap-4 justify-between items-end"
+      >
+        <div>
+          <div class="color-stone-900 font-semibold">Stan Kondrat</div>
+          <div class="color-stone-500">
+            Copyright &copy; {new Date().getFullYear()} All rights reserved.
+          </div>
+        </div>
+
+        <div class="color-stone-500">
+          This web page does not collect any cookies.
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
 
@@ -502,3 +623,28 @@ const description = `Launch your own beauty salon booking mobile app in just 2 w
     });
   }
 </script>
+
+<style>
+  .accordion .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .accordion input:checked + label + .accordion-content {
+    max-height: 200px;
+  }
+
+  .accordion input + label .chevron-up {
+    display: none;
+  }
+  .accordion input + label .chevron-down {
+    display: block;
+  }
+  .accordion input:checked + label .chevron-up {
+    display: block;
+  }
+  .accordion input:checked + label .chevron-down {
+    display: none;
+  }
+</style>
