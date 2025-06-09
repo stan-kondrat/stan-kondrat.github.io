@@ -11,7 +11,7 @@ Two years ago, Google held an emergency meeting over ChatGPT. Today, I realized 
 
 As an ordinary user, I've found that AI has become my go-to tool for daily work, especially in development, writing, and idea generation.
 
-If this trend continues, Google Search might eventually end up on [Killed by Google](https://killedbygoogle.com)—a site tracking all of Google’s discontinued projects.
+If this trend continues, Google Search might eventually end up on [Killed by Google](https://killedbygoogle.com) - a site tracking all of Google’s discontinued projects.
 
 ### Updates
 

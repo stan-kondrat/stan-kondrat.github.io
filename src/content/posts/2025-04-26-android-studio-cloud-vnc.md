@@ -12,6 +12,6 @@ They just set up a Linux machine, installed Android Studio, and gave you VNC acc
 
 It’s slow, clunky, and feels like a remote desktop from 2000. No cloud magic, no lightweight IDE, nothing.
 
-Classic example of a big company where the only priority is to ship something — no matter how clunky it is.
+Classic example of a big company where the only priority is to ship something - no matter how clunky it is.
 
 ![Android Studio Cloud VNC](/assets/posts/android-studio-cloud-vnc.jpg)
