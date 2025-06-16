@@ -11,6 +11,8 @@ This post isn’t about how you can generate a Photoshop design with prompts, or
 
 > Any tasks you can delegate to a human assistant will be delegated to a Voice-controlled AI Agent.
 
+![Frontend UI MCP](/assets/posts/frontend-ui-mcp.png)
+
 ### Get Started Now!
 
 And most importantly, **this is already possible today**:
