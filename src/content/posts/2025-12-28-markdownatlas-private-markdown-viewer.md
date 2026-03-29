@@ -1,7 +1,7 @@
 ---
 title: "MarkdownAtlas: A Privacy-First Markdown Viewer for macOS"
 categories: Projects
-tags: [macos, markdown, privacy, open-source, objective-c]
+tags: macos markdown privacy open-source objective-c
 excerpt: "Building a lightweight, offline markdown viewer with zero telemetry and no dependencies"
 ---
 
